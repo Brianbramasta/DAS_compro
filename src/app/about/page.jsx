@@ -48,8 +48,45 @@ export default function AboutPage() {
 
           <div className="mt-16">
             <h2 className="text-3xl font-bold text-center mb-8">Struktur Organisasi</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Team members would be added here */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              {[
+                {title: 'Data Center', icon: 'file.svg', description: 'Infrastruktur hyperscale dengan tier IV certification'},
+                {title: 'Cloud Solution', icon: 'cloud.svg', description: 'Layanan hybrid cloud terintegrasi'},
+                {title: 'Jaringan', icon: 'globe.svg', description: 'SD-WAN dan solusi jaringan terkelola'},
+              ].map((service, idx) => (
+                <div key={idx} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <img src={`/${service.icon}`} alt={service.title} className="h-12 w-12 mb-4" />
+                  <h3 className="text-xl font-bold text-custom mb-2">{service.title}</h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-16 text-center">
+              <h2 className="text-3xl font-bold mb-8">Profil Video Perusahaan</h2>
+              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg mx-auto max-w-4xl">
+                <iframe 
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/your-video-id"
+                  title="Company Profile"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="mt-16">
+              <h2 className="text-3xl font-bold text-center mb-8">Mitra Kami</h2>
+              <div className="grid grid-cols-2 md:grid-cols-6 gap-4 items-center">
+                {['partner1.svg', 'partner2.svg', 'partner3.svg', 'partner4.svg', 'partner5.svg', 'partner6.svg']
+                  .map((logo, idx) => (
+                    <img 
+                      key={idx}
+                      src={`/${logo}`} 
+                      alt={`Partner ${idx + 1}`} 
+                      className="h-12 mx-auto"
+                    />
+                  ))}
+              </div>
             </div>
           </div>
         </div>

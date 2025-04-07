@@ -24,46 +24,46 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center mb-4">
-                <i className="fas fa-server text-2xl text-custom mr-3"></i>
-                <h3 className="text-xl font-bold">Data Center Solutions</h3>
+                <i className="fas fa-broadcast-tower text-2xl text-custom mr-3"></i>
+                <h3 className="text-xl font-bold">Menara Telekomunikasi</h3>
               </div>
               <p className="text-gray-600 mb-4">
-                Layanan colocation dan managed hosting dengan uptime 99.99%
+                Penyediaan dan pengelolaan menara telekomunikasi strategis
               </p>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                <li>24/7 Monitoring</li>
-                <li>Redundant Power Supply</li>
-                <li>Dukungan Teknis Profesional</li>
+                <li>Jaringan 4G/LTE</li>
+                <li>Desain & Konstruksi</li>
+                <li>Pemeliharaan Berkala</li>
               </ul>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center mb-4">
-                <i className="fas fa-cloud text-2xl text-custom mr-3"></i>
-                <h3 className="text-xl font-bold">Cloud Services</h3>
+                <i className="fas fa-network-wired text-2xl text-custom mr-3"></i>
+                <h3 className="text-xl font-bold">Infrastruktur Jaringan</h3>
               </div>
               <p className="text-gray-600 mb-4">
-                Infrastruktur cloud publik, privat, dan hybrid yang skalabel
+                Solusi jaringan terintegrasi untuk kebutuhan enterprise
               </p>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                <li>Auto-scaling</li>
-                <li>Backup Otomatis</li>
-                <li>Multi-layer Security</li>
+                <li>Jaringan Fiber Optik</li>
+                <li>Wireless Backhaul</li>
+                <li>MPLS & VPN</li>
               </ul>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center mb-4">
-                <i className="fas fa-shield-alt text-2xl text-custom mr-3"></i>
-                <h3 className="text-xl font-bold">Keamanan Jaringan</h3>
+                <i className="fas fa-database text-2xl text-custom mr-3"></i>
+                <h3 className="text-xl font-bold">Data Center</h3>
               </div>
               <p className="text-gray-600 mb-4">
-                Proteksi lengkap untuk infrastruktur digital Anda
+                Fasilitas Tier III dengan keamanan berlapis
               </p>
               <ul className="list-disc pl-5 text-gray-600 space-y-2">
-                <li>Firewall Management</li>
-                <li>DDoS Protection</li>
-                <li>Security Audit</li>
+                <li>Colocation Server</li>
+                <li>Disaster Recovery</li>
+                <li>Cloud Hybrid</li>
               </ul>
             </div>
           </div>

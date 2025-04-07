@@ -48,29 +48,47 @@ export default function ContactPage() {
               </form>
             </div>
 
-            <div className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Informasi Kontak</h3>
-                <div className="space-y-2">
-                  <p className="flex items-center text-gray-600">
-                    <i className="fas fa-map-marker-alt mr-2 text-custom" />
-                    Jl. Sudirman No. 123, Jakarta Selatan
-                  </p>
-                  <p className="flex items-center text-gray-600">
-                    <i className="fas fa-phone mr-2 text-custom" />
-                    +62 21 1234 5678
-                  </p>
-                  <p className="flex items-center text-gray-600">
-                    <i className="fas fa-envelope mr-2 text-custom" />
-                    info@deltartstar.co.id
-                  </p>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-12">
+              <div className="space-y-8">
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-semibold mb-4">Kantor Pusat</h3>
+                  <div className="space-y-2 text-gray-600">
+                    <p>Jl. Sudirman No. 123</p>
+                    <p>Jakarta Selatan, DKI Jakarta</p>
+                    <p>Indonesia 12950</p>
+                    <p>Telp: +62 21 1234 5678</p>
+                    <p>Email: info@company.com</p>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-semibold mb-4">Jam Operasional</h3>
+                  <div className="space-y-2 text-gray-600">
+                    <p>Senin - Jumat: 08:00 - 17:00 WIB</p>
+                    <p>Sabtu: 08:00 - 12:00 WIB</p>
+                    <p>Minggu &amp; Hari Libur: Tutup</p>
+                  </div>
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Jam Operasional</h3>
-                <p className="text-gray-600">Senin - Jumat: 08:00 - 17:00 WIB</p>
-                <p className="text-gray-600">Sabtu: 08:00 - 12:00 WIB</p>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <form className="space-y-6">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+                    <input type="text" className="w-full px-4 py-2 border rounded-md" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" className="w-full px-4 py-2 border rounded-md" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Pesan</label>
+                    <textarea rows="4" className="w-full px-4 py-2 border rounded-md"></textarea>
+                  </div>
+                  <button type="submit" className="!rounded-button bg-custom px-6 py-3 text-white hover:bg-indigo-700">
+                    Kirim Pesan
+                  </button>
+                </form>
               </div>
             </div>
           </div>
